@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<string name="RightToLeft" value="false"/>
+	<string name="FrameBackgroundImageSplash" value="${{FrameBackgroundImageSplash}}"/>
+	<string name="FrameBackgroundImageInstall" value="${{FrameBackgroundImageInstall}}"/>
+	<string name="FrameBackgroundImageUninstall" value="${{FrameBackgroundImageUninstall}}"/>
+	<string name="FrameBackgroundImagePresentations" value="${{FrameBackgroundImagePresentations}}"/>
+</strings>

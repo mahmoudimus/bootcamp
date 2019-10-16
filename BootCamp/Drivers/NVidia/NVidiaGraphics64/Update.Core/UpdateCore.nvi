@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nvi name="Update.Core" title="${{Title}}" version="${{Version}}" versionText="${{Version}}" timestamp="2015-06-10T19:32:13" disposition="demand" hidden="true" installerMin="2.1002.137.901">
+	<filter name="minVista" min="6.0"/>
+	<strings>
+		<string name="Version" value="10.4.0"/>
+		<string name="Title" value="NVIDIA Update Core"/>
+		<string name="BackendExeName" value="NvBackend.exe"/>
+		<string name="BackendApiDllNameX86" value="NvBackendAPI32.dll"/>
+		<string name="BackendApiDllNameX64" value="NvBackendAPI64.dll"/>
+		<string name="BackendExePath" value="${{NvidiaProgramFilesX86}}\Update Core\NvBackend.exe"/>
+		<string name="NvUpdatusRegistryPath" value="${{NvidiaSoftwareKey}}\Global\NvUpdatus"/>
+		<string name="NvBackendRegistryPath" value="${{NvidiaSoftwareKey}}\Global\NvBackend"/>
+		<string name="UpdateCorePath" value="${{NvidiaProgramFiles}}\Update Core"/>
+		<string name="UpdateCoreX86Path" value="${{NvidiaProgramFilesX86}}\Update Core"/>
+		<string name="NVTrayProcessName" value="nvtray.exe"/>
+		<string name="NvDisplayDirPath" value="${{NvidiaProgramFiles}}\Display"/>
+		<string name="NvTrayExePath" value="${{NvDisplayDirPath}}\${{NVTrayProcessName}}"/>
+		<string name="NvUpdtPath" value="${{UpdateCorePath}}\NvUpdt.dll"/>
+		<string name="NvUpdtRegKey" value="0_nvupdt.dll"/>
+		<string name="NvGFTrayPluginPath" value="${{UpdateCorePath}}\NvGFTrayPlugin.dll"/>
+		<string name="NvuidllPath" value="${{NvDisplayDirPath}}\nvui.dll"/>
+		<string name="MinNvtrayVersionForVer2Restart" value="310.19"/>
+		<string name="CPLPackageIdentifier" value="Display.ControlPanel"/>
+		<string name="BackendEventSourceName" value="NVIDIA Update Service"/>
+		<string name="SystemIdentifierRegValue" value="link"/>
+	</strings>
+	<constraints>
+		<reject tests="SAFEMODE" level="silent" text="${{InstallSafeModeBlockedMessage}}"/>
+	</constraints>
+	<dependencies>
+		<package type="uninstalls" package="NVIDIA.Update"/>
+	</dependencies>
+	<extensions>
+		<extension file="UpdateCoreExt.dll"/>
+	</extensions>
+	<properties>
+		<bool name="FixedInstallLocation" value="true"/>
+		<string name="InstallLocation" value="${{UpdateCoreX86Path}}"/>
+		<bool name="IsInternational" value="false"/>
+		<bool name="IsGFExperienceComponent" value="true"/>
+		<bool name="IsQuadroExperienceComponent" value="true"/>
+		<bool name="IsUpdateComponent" value="true"/>
+		<string name="UpdatusRegistryPath" value="${{NvUpdatusRegistryPath}}"/>
+		<string name="SystemIdentifierRegValue" value="${{SystemIdentifierRegValue}}"/>
+		<string name="BackendAPI32BitDll" value="${{BackendApiDllNameX86}}"/>
+		<string name="UpdateType" value="GFExperience"/>
+	</properties>
+	<manifest>
+		<file name="UpdateCore.nvi"/>
+		<file name="UpdateCoreExt.dll"/>
+		<file name="${{BackendExeName}}"/>
+		<file name="${{BackendApiDllNameX86}}"/>
+		<file name="${{BackendApiDllNameX64}}"/>
+		<file name="WLMerger.exe"/>
+		<file name="nvupdt32.dll"/><file name="nvupdt64.dll"/></manifest>
+	<phases>
+		<exe phase="stopNvBackendInstance" name="${{InstallLocation}}\${{BackendExeName}}" when="install" onError="ignore">
+			<arg value="--shutdown"/>
+			<success value="0"/>
+		</exe>
+		<standard phase="createUpdateCoreDirectory" platform="amd64">
+			<createDirectory target="${{UpdateCorePath}}"/>
+		</standard>
+		<standard phase="createUpdateCoreX86Directory">
+			<createDirectory target="${{UpdateCoreX86Path}}"/>
+		</standard>
+		<standard phase="copyx86BackendBinaries" platform="x86">
+			<copyFile target="${{BackendExeName}}"/>
+			<copyFile target="${{BackendApiDllNameX86}}"/>
+		</standard>
+		<standard phase="copyAmd64BackendBinaries" platform="amd64">
+			<copyFile target="${{UpdateCorePath}}\WLMerger.exe" source="WLMerger.exe"/>
+			<copyFile target="${{UpdateCorePath}}\${{BackendApiDllNameX64}}" source="${{BackendApiDllNameX64}}"/>
+		</standard>
+		<if filter="minVista">
+			<standard phase="copy32BitNvUpdt" platform="x86only">
+				<copyFile target="${{UpdateCorePath}}\NvUpdt.dll" source="NvUpdt32.dll"/>
+			</standard>
+			<standard phase="copy64BitNvUpdt" platform="amd64">
+				<copyFile target="${{UpdateCorePath}}\NvUpdt.dll" source="NvUpdt64.dll"/>
+			</standard>
+			<else>
+				<standard phase="copy32BitWinXPNNvUpdt" platform="x86only">
+					<copyFile target="${{UpdateCorePath}}\NvUpdt.dll" source="NvUpdtXP32.dll"/>
+				</standard>
+				<standard phase="copy64BitWinXPNNvUpdt" platform="amd64">
+					<copyFile target="${{UpdateCorePath}}\NvUpdt.dll" source="NvUpdtXP64.dll"/>
+				</standard>
+			</else>
+		</if>
+		<if filter="minVista">
+			<standard phase="copy32BitNvUpdtr" platform="x86only" condition="IsInternational">
+				<copyFile target="${{UpdateCorePath}}\NvUpdtr.dll" source="NvUpdtr32.dll"/>
+			</standard>
+			<standard phase="copy64BitNvUpdtr" platform="amd64" condition="IsInternational">
+				<copyFile target="${{UpdateCorePath}}\NvUpdtr.dll" source="NvUpdtr64.dll"/>
+			</standard>
+			<else>
+				<standard phase="copy32BitWinXPNNvUpdtr" platform="x86only" condition="IsInternational">
+					<copyFile target="${{UpdateCorePath}}\NvUpdtr.dll" source="NvUpdtrXP32.dll"/>
+				</standard>
+				<standard phase="copy64BitWinXPNvUpdtr" platform="amd64" condition="IsInternational">
+					<copyFile target="${{UpdateCorePath}}\NvUpdtr.dll" source="NvUpdtrXP64.dll"/>
+				</standard>
+			</else>
+		</if>
+		<custom phase="createBackendEventSource" action="CreateBackendEventSource" when="install">
+			<properties>
+				<string name="EventSourceName" value="${{BackendEventSourceName}}"/>
+				<string name="MessageFilePath" value="${{InstallLocation}}\${{BackendExeName}}"/>
+			</properties>
+		</custom>
+		<if filter="minVista">
+			<exe phase="startNVTrayIconVer1" name="${{NvTrayExePath}}" dir="${{NvDisplayDirPath}}" when="uninstall" onError="ignore" flags="nowait,disassociate" condition="RestartNVTrayVer1"/>
+			<custom phase="waitForNVTrayShutdown" action="WaitForNVTrayShutdown" when="uninstall" onError="ignore" condition="RestartNVTrayVer1" progress="20" autoTick="150">
+				<properties>
+					<string name="NVTrayProcessName" value="${{NVTrayProcessName}}"/>
+					<int name="PollIncrementsMs" value="100"/>
+					<int name="MaxTimeOutMs" value="3000"/>
+				</properties>
+			</custom>
+			<exe phase="stopNVTrayIconVer1" name="${{SystemDirectory}}\Rundll32.exe" dir="${{SystemDirectory}}" when="uninstall" onError="ignore" flags="disassociate" condition="RestartNVTrayVer1" progress="25" autoTick="200">
+				<arg value="${{NvuidllPath}}"/>
+				<arg value=",StopNotificationIcon" quote="none"/>
+			</exe>
+			<exe phase="restartNVTrayIconVer2" name="${{NvTrayExePath}}" dir="${{NvDisplayDirPath}}" when="uninstall" onError="ignore" flags="nowait,disassociate" condition="RestartNVTrayVer2">
+				<arg value="-nvupdt"/>
+			</exe>
+			<custom phase="checkNVTrayRestartMethod" action="CheckNVTrayRestartMethod" when="uninstall">
+				<properties>
+					<string name="NvuidllPath" value="${{NvuidllPath}}"/>
+					<string name="NvtrayPath" value="${{NvTrayExePath}}"/>
+					<string name="MinNvtrayVersionForVer2Restart" value="${{MinNvtrayVersionForVer2Restart}}"/>
+				</properties>
+			</custom>
+			<else>
+				<exe phase="startXPNVTrayIcon" dir="${{SystemDirectory}}" name="${{SystemDirectory}}\Rundll32.exe" when="uninstall" onError="ignore" flags="disassociate" condition="StartNVTrayXP" progress="25" autoTick="200">
+					<arg value="${{NvUpdtPath}}"/>
+					<arg value=",NvRestartTrayIcon" quote="none"/>
+				</exe>
+				<custom phase="allowProcessesBreakawayFromJob" action="AllowProcessesBreakawayFromJob" onError="ignore" condition="StartNVTrayXP" when="uninstall">
+					<properties>
+						<string name="JobName" value="ARP Job"/>
+					</properties>
+				</custom>
+				<custom phase="checkForNVTrayStartXP" action="CheckForTrayStartXP" when="uninstall">
+					<properties>
+						<string name="NvUpdtPath" value="${{NvUpdtPath}}"/>
+						<bool name="CheckForCPLPresence" value="true"/>
+					</properties>
+				</custom>
+			</else>
+		</if>
+		<if filter="minVista">
+			<standard phase="addRegKeysForVistaPlusOnly">
+				<addRegistry keyName="${{NvidiaSoftwareKey}}\NvTray\${{NvUpdtRegKey}}" valueName="FullPath" type="REG_SZ" value="${{UpdateCorePath}}\NvUpdt.dll"/>
+			</standard>
+			<else>
+				<standard phase="addRegKeysForXPOnly">
+					<addRegistry keyName="${{NvidiaSoftwareKey}}\Global\MediaCenterTray\${{NvUpdtRegKey}}" valueName="FullPath" type="REG_SZ" value="${{UpdateCorePath}}\NvUpdt.dll"/>
+				</standard>
+			</else>
+		</if>
+		<custom phase="setSystemIdentifier" action="SetSystemIdentifier" when="install">
+			<properties>
+				<string name="Path" value="${{NvBackendRegistryPath}}"/>
+				<string name="ValueName" value="${{SystemIdentifierRegValue}}"/>
+			</properties>
+		</custom>
+		<standard phase="createNvBackendRunKey">
+			<addRegistry keyName="HKLM\Software\Microsoft\Windows\CurrentVersion\Run" valueName="NvBackend" value="&quot;${{InstallLocation}}\${{BackendExeName}}&quot;" valueType="REG_SZ"/>
+		</standard>
+		<custom phase="decideBackendStart" action="DecideBackendStart" when="installClose" onError="ignore" condition="!Global:RebootRequired"/>
+		<exe phase="startNvBackendInstance" name="${{BackendExePath}}" when="installClose" flags="nowait,disassociate" condition="!Global:RebootRequired"/>
+		<if filter="minVista">
+			<custom phase="checkNVTrayRestartMethod" action="CheckNVTrayRestartMethod" when="installClose" condition="!Global:RebootRequired">
+				<properties>
+					<string name="NvuidllPath" value="${{NvuidllPath}}"/>
+					<string name="NvtrayPath" value="${{NvTrayExePath}}"/>
+					<string name="MinNvtrayVersionForVer2Restart" value="${{MinNvtrayVersionForVer2Restart}}"/>
+				</properties>
+			</custom>
+			<exe phase="startNVTrayIconVer1" name="${{NvTrayExePath}}" dir="${{NvDisplayDirPath}}" when="installClose" flags="nowait,disassociate" condition="RestartNVTrayVer1"/>
+			<exe phase="restartNVTrayIconVer2" name="${{NvTrayExePath}}" dir="${{NvDisplayDirPath}}" when="installClose" flags="nowait,disassociate" condition="RestartNVTrayVer2">
+				<arg value="-nvupdt"/>
+			</exe>
+			<else>
+				<custom phase="checkIfNvidiaExperienceInstall" action="CheckIfNvidiaExperienceInstall" when="installClose" condition="!Global:RebootRequired"/>
+				<custom phase="checkForNVTrayStartXP" action="CheckForTrayStartXP" when="installClose" condition="!IsNvidiaExperienceInstall">
+					<properties>
+						<string name="NvUpdtPath" value="${{NvUpdtPath}}"/>
+						<bool name="CheckForCPLPresence" value="true"/>
+					</properties>
+				</custom>
+				<exe phase="startXPNVTrayIcon" name="${{SystemDirectory}}\Rundll32.exe" dir="${{SystemDirectory}}" when="installClose" flags="nowait,disassociate" condition="StartNVTrayXP" progress="25" autoTick="200">
+					<arg value="${{NvUpdtPath}}"/>
+					<arg value=",NvRestartTrayIcon" quote="none"/>
+				</exe>
+				<custom phase="checkForGFTrayStartXP" action="CheckForTrayStartXP" when="installClose" condition="IsNvidiaExperienceInstall">
+					<properties>
+						<string name="NvGFTrayPluginPath" value="${{NvGFTrayPluginPath}}"/>
+						<bool name="CheckForCPLPresence" value="true"/>
+					</properties>
+				</custom>
+				<exe phase="startXPGFTrayIcon" name="${{SystemDirectory}}\Rundll32.exe" dir="${{SystemDirectory}}" when="installClose" flags="nowait,disassociate" condition="StartGFTrayXP" progress="25" autoTick="200">
+					<arg value="${{NvGFTrayPluginPath}}"/>
+					<arg value=",NvRestartTrayIcon" quote="none"/>
+				</exe>
+			</else>
+		</if>
+		<standard phase="RemoveBackendData" when="uninstall">
+			<deleteDirectoryTree target="${{LocalUserAppData}}\NVIDIA\NvBackend"/>
+			<deleteDirectory target="${{LocalUserAppData}}\NVIDIA"/>
+		</standard>
+		<standard phase="deleteCoreRedirectedKeysOnlyOnUninstall" when="uninstall" platform="x86" onError="ignore" condition="!Global:CleanInstall">
+			<deleteRegistryKeyTree keyName="${{NvBackendRegistryPath}}"/>
+			<deleteRegistryKeyTree keyName="${{NvUpdatusRegistryPath}}"/>
+			<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\Global"/>
+			<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}"/>
+		</standard>
+		<standard phase="deleteCoreKeysOnlyOnUninstall" when="uninstall" onError="ignore" condition="!Global:CleanInstall">
+			<deleteRegistryKeyTree keyName="${{NvUpdatusRegistryPath}}"/>
+			<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\Global"/>
+			<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}"/>
+			<deleteRegistryKeyTree keyName="${{NvidiaPerUserSoftwareKey}}\NvBackend"/>
+			<deleteRegistryKey keyName="${{NvidiaPerUserSoftwareKey}}"/>
+		</standard>
+		<if filter="minVista">
+			<standard phase="removeRegKeysForVistaPlusOnly" when="uninstall">
+				<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\NvTray\${{NvUpdtRegKey}}"/>
+				<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\NvTray"/>
+			</standard>
+			<else>
+				<standard phase="removeRegKeysForXPOnly" when="uninstall">
+					<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\Global\MediaCenterTray\${{NvUpdtRegKey}}"/>
+					<deleteRegistryKey keyName="${{NvidiaSoftwareKey}}\Global\MediaCenterTray"/>
+				</standard>
+			</else>
+		</if>
+		<custom phase="deleteBackendEventSource" action="DeleteBackendEventSource" when="uninstall">
+			<properties>
+				<string name="EventSourceName" value="${{BackendEventSourceName}}"/>
+			</properties>
+		</custom>
+		<exe phase="stopNvBackendInstance" name="${{InstallLocation}}\${{BackendExeName}}" when="uninstall" onError="ignore">
+			<arg value="--shutdown"/>
+			<success value="0"/>
+		</exe>
+	</phases>
+	<strings>
+		<localized locale="0x0409">
+			<string name="NotAnUpgradeMessage" value="Did not install. A newer version already exists."/>
+			<string name="InstallSafeModeBlockedMessage" value="${{Title}} cannot be installed in safe mode."/>
+		</localized>
+		<localized locale="0x0401">
+			<string name="NotAnUpgradeMessage" value="لم يتم التثبيت. توجد بالفعل نسخة أحدث."/>
+		</localized>
+		<localized locale="0x0405">
+			<string name="NotAnUpgradeMessage" value="Nenainstalován. Je již nainstalována novější verze."/>
+		</localized>
+		<localized locale="0x0406">
+			<string name="NotAnUpgradeMessage" value="Blev ikke installeret. Der findes allerede en nyere version."/>
+		</localized>
+		<localized locale="0x0407">
+			<string name="NotAnUpgradeMessage" value="Wurde nicht installiert. Es ist bereits eine neuere Version installiert."/>
+		</localized>
+		<localized locale="0x0408">
+			<string name="NotAnUpgradeMessage" value="Μην εγκαταστήσετε. Ήδη υπάρχει νεότερη έκδοση."/>
+		</localized>
+		<localized locale="0x0809">
+			<string name="NotAnUpgradeMessage" value="Did not install. A newer version already exists"/>
+		</localized>
+		<localized locale="0x040a">
+			<string name="NotAnUpgradeMessage" value="No se instaló. Ya existe una versión más actual."/>
+		</localized>
+		<localized locale="0x080a">
+			<string name="NotAnUpgradeMessage" value="No se instaló. Ya existe una versión más actual."/>
+		</localized>
+		<localized locale="0x040b">
+			<string name="NotAnUpgradeMessage" value="Ei asennettu. Uudempi versio on jo olemassa."/>
+		</localized>
+		<localized locale="0x040c">
+			<string name="NotAnUpgradeMessage" value="Installation non effectuée. Une version plus récente existe déjà."/>
+		</localized>
+		<localized locale="0x040d">
+			<string name="NotAnUpgradeMessage" value="אל תתקין. גרסה עדכנית יותר קיימת כבר."/>
+		</localized>
+		<localized locale="0x040e">
+			<string name="NotAnUpgradeMessage" value="Nem telepíthető. Már létezik egy újabb verzió."/>
+		</localized>
+		<localized locale="0x0410">
+			<string name="NotAnUpgradeMessage" value="Installazione non eseguita. È presente una nuova versione."/>
+		</localized>
+		<localized locale="0x0411">
+			<string name="NotAnUpgradeMessage" value="インストールされませんでした。新しいバージョンが既に存在します。"/>
+		</localized>
+		<localized locale="0x0412">
+			<string name="NotAnUpgradeMessage" value="설치하지 않았습니다. 새 버전이 이미 존재합니다."/>
+		</localized>
+		<localized locale="0x0413">
+			<string name="NotAnUpgradeMessage" value="Is niet geïnstalleerd. Er bestaat reeds een nieuwere versie."/>
+		</localized>
+		<localized locale="0x0414">
+			<string name="NotAnUpgradeMessage" value="Ble ikke installert. En nyere versjon finnes allerede."/>
+		</localized>
+		<localized locale="0x0415">
+			<string name="NotAnUpgradeMessage" value="Nie zainstalowano. Istnieje już nowsza wersja."/>
+		</localized>
+		<localized locale="0x0816">
+			<string name="NotAnUpgradeMessage" value="A instalação não foi concretizada. Já existe uma versão mais recente."/>
+		</localized>
+		<localized locale="0x0416">
+			<string name="NotAnUpgradeMessage" value="Não foi instalado. Já existe uma versão mais recente."/>
+		</localized>
+		<localized locale="0x0419">
+			<string name="NotAnUpgradeMessage" value="Установка не выполнена. Уже имеется более новая версия."/>
+		</localized>
+		<localized locale="0x041b">
+			<string name="NotAnUpgradeMessage" value="Nenainštalovalo sa. Existuje novšia verzia."/>
+		</localized>
+		<localized locale="0x0424">
+			<string name="NotAnUpgradeMessage" value="Ni namestil. Novejša različica že obstaja."/>
+		</localized>
+		<localized locale="0x041d">
+			<string name="NotAnUpgradeMessage" value="Installerades inte. En nyare version finns redan."/>
+		</localized>
+		<localized locale="0x041e">
+			<string name="NotAnUpgradeMessage" value="ไม่ได้ติดตั้ง มีรุ่นใหม่อยู่แล้ว"/>
+		</localized>
+		<localized locale="0x041f">
+			<string name="NotAnUpgradeMessage" value="Kurulmadı. Zaten daha yeni bir sürüm mevcut."/>
+		</localized>
+		<localized locale="0x0804">
+			<string name="NotAnUpgradeMessage" value="未安装。已存在更新的版本。"/>
+		</localized>
+		<localized locale="0x0404">
+			<string name="NotAnUpgradeMessage" value="未安裝。已有較新的版本。"/>
+		</localized>
+	</strings>
+	<include name="${{InstallerDllDirectory}}\GFExperienceProgressText.cfg" select="/nvi/*"/>
+	<include name="${{InstallerDllDirectory}}\QuadroExperienceProgressText.cfg" select="/nvi/*"/>
+</nvi>

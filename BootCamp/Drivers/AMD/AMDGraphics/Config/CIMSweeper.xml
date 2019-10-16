@@ -1,0 +1,1176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ROOT>
+  <AMDDrivers>
+    <Drivers Key="DisplayDriver" id="{4D36E968-E325-11CE-BFC1-08002BE10318};amdkmdap" productver="9.010.0.0000" size="90">
+      <REGISTRY>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD</RVAL>        
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI</RVAL>        
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD</RVAL>        
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\UMD\\DXVA</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\Enum</RVAL>       
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\CurrentControlSet\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\CurrentControlSet\\services\\eventlog\\System\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\CurrentControlSet\\services\\eventlog\\System\\amdkmdap</RVAL>        
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag\\UMD\\DXVA</RVAL>        
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\UMD\\DXVA</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\Enum</RVAL>       
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\amdkmdap\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap</RVAL>        
+        <RVAL>HKEY_LOCAL_MACHINE\\Software\\ATI Technologies\\CBT</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Windows\\System32\\drivers\\atikmdag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmdagA.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmdagB.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmpag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmpagA.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\ati2kmdag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\ati2kmpag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\amdacpksd.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\amdacpksl.sys</FILE>
+        <File>Windows\\system32\\drivers\\atipmdag.sys</File>
+        <File>Windows\\system32\\drivers\\atihdmi.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw73.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw76.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw83.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw86.sys</File>
+        <File>Windows\\system32\\drivers\\atihdwb3.sys</File>
+        <File>Windows\\system32\\drivers\\atihdwb6.sys</File>
+        <File>Windows\\system32\\amdave32.dll</File>
+        <File>Windows\\system32\\amdcalcl.dll</File>
+        <File>Windows\\system32\\amdcaldd.dll</File>
+        <File>Windows\\system32\\amdcalrt.dll</File>
+        <File>Windows\\system32\\amdh232enc32.dll</File>
+        <File>Windows\\system32\\amdhcp32.dll</File>
+        <File>Windows\\system32\\amdhdl32.dll</File>
+        <File>Windows\\system32\\aMDhwDecoder_32.dll</File>
+        <File>Windows\\system32\\amdicdxx.dat</File>
+        <File>Windows\\system32\\amdmantle32.dll</File>
+        <File>Windows\\system32\\amdmiracast.dll</File>
+        <File>Windows\\system32\\amdmmcl.dll</File>
+        <File>Windows\\system32\\amdocl.dll</File>
+        <File>Windows\\system32\\amdocl_as.exe</File>
+        <File>Windows\\system32\\amdocl_as32.exe</File>
+        <File>Windows\\system32\\amdocl_ld.exe</File>
+        <File>Windows\\system32\\amdocl_ld32.exe</File>
+        <File>Windows\\system32\\amdocl32.dll</File>
+        <File>Windows\\system32\\amdpcom32.dll</File>
+        <File>Windows\\system32\\ati2edxx.dll</File>
+        <File>Windows\\system32\\ati2edxx.dll</File>
+        <File>Windows\\system32\\ati2erec.dll</File>
+        <File>Windows\\system32\\atiadlxx.dll</File>
+        <File>Windows\\system32\\atiadlxy.dll</File>
+        <File>Windows\\system32\\atiapfxx.blb</File>
+        <File>Windows\\system32\\atiapfxx.exe</File>
+        <File>Windows\\system32\\atiapfxx.log</File>
+        <File>Windows\\system32\\atibrtmon.exe</File>
+        <File>Windows\\system32\\atibtmon.exe</File>
+        <File>Windows\\system32\\aticalcl.dll</File>
+        <File>Windows\\system32\\aticaldd.dll</File>
+        <File>Windows\\system32\\aticalrt.dll</File>
+        <File>Windows\\system32\\aticfx32.dll</File>
+        <File>Windows\\system32\\aticfx32A.dll</File>
+        <File>Windows\\system32\\atidemgx.dll</File>
+        <File>Windows\\system32\\atidemgy.dll</File>
+        <File>Windows\\system32\\atidxx32.dll</File>
+        <File>Windows\\system32\\atidxx32A.dll</File>
+        <File>Windows\\system32\\atieclxx.exe</File>
+        <File>Windows\\system32\\atiedu32.dll</File>
+        <File>Windows\\system32\\atieslxx.exe</File>
+        <File>Windows\\system32\\atieslxx.exe</File>
+        <File>Windows\\system32\\atiesrxx.exe</File>
+        <File>Windows\\system32\\atig6pxx.dll</File>
+        <File>Windows\\system32\\atig6txx.dll</File>
+        <File>Windows\\system32\\atigktxx.dll</File>
+        <File>Windows\\system32\\atiglpxx.dll</File>
+        <File>Windows\\system32\\atiicdxx.dat</File>
+        <File>Windows\\system32\\atiicdxx.dat</File>
+        <File>Windows\\system32\\atilau.dll</File>
+        <File>Windows\\system32\\atilauA.dll</File>
+        <File>Windows\\system32\\atimpc32.dll</File>
+        <File>Windows\\system32\\atimuixx.dll</File>
+        <File>Windows\\system32\\atio6axx.dll</File>
+        <File>Windows\\system32\\atio6axxA.dll</File>
+        <File>Windows\\system32\\atio6axxB.dll</File>
+        <File>Windows\\system32\\atio6axxB.dll</File>
+        <File>Windows\\system32\\atiodcli.exe</File>
+        <File>Windows\\system32\\aTIODCLI.exe</File>
+        <File>Windows\\system32\\atiode.exe</File>
+        <File>Windows\\system32\\aTIODE.exe</File>
+        <File>Windows\\system32\\atiogl.xml</File>
+        <File>Windows\\system32\\atiogl.xml</File>
+        <File>Windows\\system32\\atioglxx.dll</File>
+        <File>Windows\\system32\\atioglxxA.dll</File>
+        <File>Windows\\system32\\atioglxxB.dll</File>
+        <File>Windows\\system32\\atipblag.dat</File>
+        <File>Windows\\system32\\atipdl32.dll</File>
+        <File>Windows\\system32\\atipdlxx.dll</File>
+        <File>Windows\\system32\\atipmdag.dll</File>
+        <File>Windows\\system32\\atisamu32.dll</File>
+        <File>Windows\\system32\\atitmm32.dll</File>
+        <File>Windows\\system32\\atitmp32.dll</File>
+        <File>Windows\\system32\\atiu9p32.dll</File>
+        <File>Windows\\system32\\atiu9pag.dll</File>
+        <File>Windows\\system32\\atiuldx6a.cap</File>
+        <File>Windows\\system32\\atiuldx6a.dll</File>
+        <File>Windows\\system32\\atiuldxva.cap</File>
+        <File>Windows\\system32\\atiuldxva.dll</File>
+        <File>Windows\\system32\\atiumd6a.cap</File>
+        <File>Windows\\system32\\atiumd6a.dat</File>
+        <File>Windows\\system32\\atiumd6a.dll</File>
+        <File>Windows\\system32\\atiumd6v.dll</File>
+        <File>Windows\\system32\\atiumdag.dll</File>
+        <File>Windows\\system32\\atiumdag.dll</File>
+        <File>Windows\\system32\\atiumdagA.dll</File>
+        <File>Windows\\system32\\atiumdagB.dll</File>
+        <File>Windows\\system32\\atiumdmv.dll</File>
+        <File>Windows\\system32\\atiumdva.cap</File>
+        <File>Windows\\system32\\atiumdva.cap</File>
+        <File>Windows\\system32\\atiumdva.dat</File>
+        <File>Windows\\system32\\atiumdva.dll</File>
+        <File>Windows\\system32\\atiuxp32.dll</File>
+        <File>Windows\\system32\\atiuxpag.dll</File>
+        <File>Windows\\system32\\atiuxpag.dll</File>
+        <File>Windows\\system32\\ativcaxx.cpa</File>
+        <File>Windows\\system32\\ativcaxx.vp</File>
+        <File>Windows\\system32\\ativce02.dat</File>
+        <File>Windows\\system32\\ativce03.dat</File>
+        <File>Windows\\system32\\ativdkxx.vp</File>
+        <File>Windows\\system32\\ativokxx.vp</File>
+        <File>Windows\\system32\\ativpkxx.vp</File>
+        <File>Windows\\system32\\ativpsrm.bin</File>
+        <File>Windows\\system32\\ativpsrm.dll</File>
+        <File>Windows\\system32\\ativvaxy_cik.dat</File>
+        <File>Windows\\system32\\ativvaxy_cik_nd.dat</File>
+        <File>Windows\\system32\\ativvaxy_cz_nd.dat</File>
+        <File>Windows\\system32\\ativvaxy_vi.dat</File>
+        <File>Windows\\system32\\ativvaxy_vi_nd.dat</File>
+        <File>Windows\\system32\\ativvkxx.vp</File>
+        <File>Windows\\system32\\ativvpxx.vp</File>
+        <File>Windows\\system32\\ativvsva.dat</File>
+        <File>Windows\\system32\\ativvsvl.dat</File>
+        <File>Windows\\system32\\ccc.exe</File>
+        <File>Windows\\system32\\ccc2_install.exe</File>
+        <File>Windows\\system32\\CCCInstall</File>
+        <File>Windows\\system32\\clinfo.exe</File>
+        <File>Windows\\system32\\coinst_</File>
+        <File>Windows\\system32\\delayapo.dll</File>
+        <File>Windows\\system32\\kapp_ci.bin</File>
+        <File>Windows\\system32\\kapp_ci.sbin</File>
+        <File>Windows\\system32\\kapp_si.bin</File>
+        <File>Windows\\system32\\kapp_si.sbin</File>
+        <File>Windows\\system32\\kdbsdk32.dll</File>
+        <File>Windows\\system32\\mantle32.dll</File>
+        <File>Windows\\system32\\mantleaxl32.dll</File>
+        <File>Windows\\system32\\mcl32.dll</File>
+        <File>Windows\\system32\\oemdspif.dll</File>
+        <File>Windows\\system32\\OpenCL.dll</File>
+        <File>Windows\\system32\\OpenVideo.dll</File>
+        <File>Windows\\system32\\OpenVideo32.dll</File>
+        <File>Windows\\system32\\OVDecode.dll</File>
+        <File>Windows\\system32\\OVDecode32.dll</File>
+        <File>Windows\\system32\\samu_krnl_ci.sbin</File>
+        <File>Windows\\system32\\samu_krnl_isv_ci.sbin</File>
+        <File>Windows\\system32\\SlotMaximizerAg.dll</File>
+        <File>Windows\\system32\\SlotMaximizerBe.dll</File>
+      </FILES>
+      <DIRECTORIES>
+        <!--DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\C7_21649*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\C8_21649*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\CE_21649*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\CW_21649*</DIRECTORY-->
+      </DIRECTORIES>
+      <SERVICES>
+        <SERVICEDELETE>AMD External Events Utility</SERVICEDELETE>
+        <SERVICEDELETE>ATI External Events Utility</SERVICEDELETE>
+        <SERVICEDELETE>AMD FUEL Service</SERVICEDELETE>
+        <SERVICEDELETE>amdkmdag</SERVICEDELETE>
+        <SERVICEDELETE>amdkmdap</SERVICEDELETE>
+        <SERVICEDELETE>atikmafd</SERVICEDELETE>
+        <SERVICEDELETE>AtiHDAudioService</SERVICEDELETE>
+        <SERVICEDELETE>AODService</SERVICEDELETE>
+        <SERVICEDELETE>atierecord</SERVICEDELETE>
+        <SERVICEDELETE>atipmdag</SERVICEDELETE>
+      </SERVICES>
+    </Drivers>
+    <Drivers Key="DisplayDriver64" id="{4D36E968-E325-11CE-BFC1-08002BE10318};amdkmdap" productver="9.010.0.0000" size="90">
+      <REGISTRY>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI</RVAL>        
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD</RVAL>        
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\EEU</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\UMD\\DXVA</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdag\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\CurrentControlSet\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\CurrentControlSet\\services\\eventlog\\System\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\CurrentControlSet\\services\\eventlog\\System\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag\\UMD\\DXVA</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet002\\services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\UMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\UMD\\DXVA</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap\\Device0</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap\\Device1</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\amdkmdap\Device2</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\services\\amdkmdap\\Device3</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdag</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\ControlSet001\\services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\Software\\ATI Technologies\\CBT</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdap</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\System\\ControlSet001\\Services\\amdkmdag</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Windows\\System32\\drivers\\amdacpksd.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\amdacpksl.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmdag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atikmpag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\ati2kmdag.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\ati2kmpag.sys</FILE>
+        <File>Windows\\system32\\drivers\\atipmdag.sys</File>
+        <File>Windows\\system32\\drivers\\atihdmi.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw73.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw76.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw83.sys</File>
+        <File>Windows\\system32\\drivers\\atihdw86.sys</File>
+        <File>Windows\\system32\\drivers\\atihdwb3.sys</File>
+        <File>Windows\\system32\\drivers\\atihdwb6.sys</File>
+        <FILE>Windows\\ativpsrm.bin</FILE>
+        <File>Windows\\SysWOW64\\amdave32.dll</File>
+        <File>Windows\\system32\\amdave64.dll</File>
+        <File>Windows\\SysWOW64\\amdcalcl.dll</File>
+        <File>Windows\\system32\\amdcalcl64.dll</File>
+        <File>Windows\\SysWow64\\amdcaldd.dll</File>
+        <File>Windows\\system32\\amdcaldd64.dll</File>
+        <File>Windows\\SysWOW64\\amdcalrt.dll</File>
+        <File>Windows\\system32\\amdcalrt64.dll</File>
+        <File>Windows\\system32\\amdh232enc32.dll</File>
+        <File>Windows\\SysWOW64\\aMDh264Enc32.dll</File>
+        <File>Windows\\system32\\aMDh264Enc64.dll</File>
+        <File>Windows\\SysWOW64\\amdhcp32.dll</File>
+        <File>Windows\\system32\\amdhcp64.dll</File>
+        <File>Windows\\SysWOW64\\amdhdl32.dll</File>
+        <File>Windows\\system32\\amdhdl64.dll</File>
+        <File>Windows\\SysWOW64\\aMDhwDecoder_32.dll</File>
+        <File>Windows\\system32\\aMDhwDecoder_64.dll</File>
+        <File>Windows\\system32\\amdicdxx.dat</File>
+        <File>Windows\\SysWOW64\\amdmantle32.dll</File>
+        <File>Windows\\system32\\amdmantle64.dll</File>
+        <File>Windows\\system32\\amdmiracast.dll</File>
+        <File>Windows\\SysWOW64\\amdmmcl.dll</File>
+        <File>Windows\\system32\\amdmmcl6.dll</File>
+        <File>Windows\\system32\\amdocl.dll</File>
+        <File>Windows\\system32\\amdocl_as.exe</File>
+        <File>Windows\\SysWOW64\\amdocl_as32.exe</File>
+        <File>Windows\\system32\\amdocl_as64.exe</File>
+        <File>Windows\\system32\\amdocl_ld.exe</File>
+        <File>Windows\\SysWOW64\\amdocl_ld32.exe</File>
+        <File>Windows\\system32\\amdocl_ld64.exe</File>
+        <File>Windows\\SysWOW64\\amdocl32.dll</File>
+        <File>Windows\\system32\\amdocl64.dll</File>
+        <File>Windows\\SysWOW64\\amdpcom32.dll</File>
+        <File>Windows\\system32\\amdpcom64.dll</File>
+        <File>Windows\\system32\\ati2edxx.dll</File>
+        <File>Windows\\system32\\ati2edxx.dll</File>
+        <File>Windows\\system32\\ati2erec.dll</File>
+        <File>Windows\\system32\\atiadlxx.dll</File>
+        <File>Windows\\system32\\atiadlxy.dll</File>
+        <File>Windows\\system32\\atiapfxx.blb</File>
+        <File>Windows\\system32\\atiapfxx.exe</File>
+        <File>Windows\\system32\\atiapfxx.log</File>
+        <File>Windows\\system32\\atibrtmon.exe</File>
+        <File>Windows\\system32\\atibtmon.exe</File>
+        <File>Windows\\SysWOW64\\aticalcl.dll</File>
+        <File>Windows\\system32\\aticalcl64.dll</File>
+        <File>Windows\\SysWOW64\\aticaldd.dll</File>
+        <File>Windows\\system32\\aticaldd64.dll</File>
+        <File>Windows\\SysWOW64\\aticalrt.dll</File>
+        <File>Windows\\system32\\aticalrt64.dll</File>
+        <File>Windows\\SysWOW64\\aticfx32.dll</File>
+        <File>Windows\\SysWOW64\\aticfx32A.dll</File>
+        <File>Windows\\system32\\aticfx64.dll</File>
+        <File>Windows\\system32\\aticfx64A.dll</File>
+        <File>Windows\\system32\\atidemgx.dll</File>
+        <File>Windows\\system32\\atidemgy.dll</File>
+        <File>Windows\\SysWOW64\\atidxx32.dll</File>
+        <File>Windows\\SysWOW64\\atidxx32A.dll</File>
+        <File>Windows\\system32\\atidxx64.dll</File>
+        <File>Windows\\system32\\atidxx64A.dll</File>
+        <File>Windows\\system32\\atieclxx.exe</File>
+        <File>Windows\\SysWOW64\\atiedu32.dll</File>
+        <File>Windows\\system32\\atiedu64.dll</File>
+        <File>Windows\\system32\\atieslxx.exe</File>
+        <File>Windows\\system32\\atieslxx.exe</File>
+        <File>Windows\\system32\\atiesrxx.exe</File>
+        <File>Windows\\system32\\atig6pxx.dll</File>
+        <File>Windows\\system32\\atig6txx.dll</File>
+        <File>Windows\\system32\\atigktxx.dll</File>
+        <File>Windows\\system32\\atiglpxx.dll</File>
+        <File>Windows\\system32\\atiicdxx.dat</File>
+        <File>Windows\\system32\\atiicdxx.dat</File>
+        <File>Windows\\system32\\atilau.dll</File>
+        <File>Windows\\system32\\atilauA.dll</File>
+        <File>Windows\\SysWOW64\\atimpc32.dll</File>
+        <File>Windows\\system32\\atimpc64.dll</File>
+        <File>Windows\\system32\\atimuixx.dll</File>
+        <File>Windows\\system32\\atio6axx.dll</File>
+        <File>Windows\\system32\\atio6axxA.dll</File>
+        <File>Windows\\system32\\atio6axxB.dll</File>
+        <File>Windows\\system32\\atio6axxB.dll</File>
+        <File>Windows\\system32\\atiodcli.exe</File>
+        <File>Windows\\system32\\aTIODCLI.exe</File>
+        <File>Windows\\system32\\atiode.exe</File>
+        <File>Windows\\system32\\aTIODE.exe</File>
+        <File>Windows\\system32\\atiogl.xml</File>
+        <File>Windows\\system32\\atiogl.xml</File>
+        <File>Windows\\system32\\atioglxx.dll</File>
+        <File>Windows\\system32\\atioglxxA.dll</File>
+        <File>Windows\\system32\\atioglxxB.dll</File>
+        <File>Windows\\system32\\atipblag.dat</File>
+        <File>Windows\\SysWOW64\\atipdl32.dll</File>
+        <File>Windows\\system32\\atipdl64.dll</File>
+        <File>Windows\\system32\\atipdlxx.dll</File>
+        <File>Windows\\system32\\atipmdag.dll</File>
+        <File>Windows\\SysWOW64\\atisamu32.dll</File>
+        <File>Windows\\system32\\atisamu64.dll</File>
+        <File>Windows\\SysWOW64\\atitmm32.dll</File>
+        <File>Windows\\system32\\atitmm64.dll</File>
+        <File>Windows\\SysWOW64\\atitmp32.dll</File>
+        <File>Windows\\system32\\atitmp64.dll</File>
+        <File>Windows\\SysWOW64\\atiu9p32.dll</File>
+        <File>Windows\\system32\\atiu9p64.dll</File>
+        <File>Windows\\system32\\atiu9pag.dll</File>
+        <File>Windows\\system32\\atiuldx6a.cap</File>
+        <File>Windows\\system32\\atiuldx6a.dll</File>
+        <File>Windows\\system32\\atiuldxva.cap</File>
+        <File>Windows\\system32\\atiuldxva.dll</File>
+        <File>Windows\\system32\\atiumd64.dll</File>
+        <File>Windows\\system32\\atiumd64A.dll</File>
+        <File>Windows\\system32\\atiumd64B.dll</File>
+        <File>Windows\\system32\\atiumd6a.cap</File>
+        <File>Windows\\system32\\atiumd6a.dat</File>
+        <File>Windows\\system32\\atiumd6a.dll</File>
+        <File>Windows\\system32\\atiumd6v.dll</File>
+        <File>Windows\\system32\\atiumdag.dll</File>
+        <File>Windows\\system32\\atiumdag.dll</File>
+        <File>Windows\\system32\\atiumdagA.dll</File>
+        <File>Windows\\system32\\atiumdagB.dll</File>
+        <File>Windows\\system32\\atiumdmv.dll</File>
+        <File>Windows\\system32\\atiumdva.cap</File>
+        <File>Windows\\system32\\atiumdva.cap</File>
+        <File>Windows\\system32\\atiumdva.dat</File>
+        <File>Windows\\system32\\atiumdva.dll</File>
+        <File>Windows\\SysWOW64\\atiuxp32.dll</File>
+        <File>Windows\\system32\\atiuxp64.dll</File>
+        <File>Windows\\system32\\atiuxpag.dll</File>
+        <File>Windows\\system32\\atiuxpag.dll</File>
+        <File>Windows\\system32\\ativcaxx.cpa</File>
+        <File>Windows\\system32\\ativcaxx.vp</File>
+        <File>Windows\\system32\\ativce02.dat</File>
+        <File>Windows\\system32\\ativce03.dat</File>
+        <File>Windows\\system32\\ativdkxx.vp</File>
+        <File>Windows\\system32\\ativokxx.vp</File>
+        <File>Windows\\system32\\ativpkxx.vp</File>
+        <File>Windows\\system32\\ativpsrm.bin</File>
+        <File>Windows\\system32\\ativpsrm.dll</File>
+        <File>Windows\\system32\\ativvaxy_cik.dat</File>
+        <File>Windows\\system32\\ativvaxy_cik_nd.dat</File>
+        <File>Windows\\system32\\ativvaxy_cz_nd.dat</File>
+        <File>Windows\\system32\\ativvaxy_vi.dat</File>
+        <File>Windows\\system32\\ativvaxy_vi_nd.dat</File>
+        <File>Windows\\system32\\ativvkxx.vp</File>
+        <File>Windows\\system32\\ativvpxx.vp</File>
+        <File>Windows\\system32\\ativvsva.dat</File>
+       <File>Windows\\system32\\ativvsvl.dat</File>
+        <File>Windows\\system32\\ccc.exe</File>
+        <File>Windows\\system32\\ccc2_install.exe</File>
+        <File>Windows\\system32\\CCCInstall</File>
+        <File>Windows\\system32\\clinfo.exe</File>
+        <File>Windows\\system32\\coinst_</File>
+        <File>Windows\\system32\\delayapo.dll</File>
+        <File>Windows\\system32\\kapp_ci.bin</File>
+        <File>Windows\\system32\\kapp_ci.sbin</File>
+        <File>Windows\\system32\\kapp_si.bin</File>
+        <File>Windows\\system32\\kapp_si.sbin</File>
+        <File>Windows\\SysWOW64\\kdbsdk32.dll</File>
+        <File>Windows\\system32\\kdbsdk64.dll</File>
+        <File>Windows\\SysWOW64\\mantle32.dll</File>
+        <File>Windows\\system32\\mantle64.dll</File>
+        <File>Windows\\SysWOW64\\mantleaxl32.dll</File>
+        <File>Windows\\system32\\mantleaxl64.dll</File>
+        <File>Windows\\SysWOW64\\mcl32.dll</File>
+        <File>Windows\\system32\\mcl64.dll</File>
+        <File>Windows\\system32\\oemdspif.dll</File>
+        <File>Windows\\system32\\OpenCL.dll</File>
+        <File>Windows\\system32\\OpenVideo.dll</File>
+        <File>Windows\\SysWOW64\\OpenVideo32.dll</File>
+        <File>Windows\\system32\\OpenVideo64.dll</File>
+        <File>Windows\\system32\\OVDecode.dll</File>
+        <File>Windows\\SysWOW64\\OVDecode32.dll</File>
+        <File>Windows\\system32\\OVDecode64.dll</File>
+        <File>Windows\\system32\\samu_krnl_ci.sbin</File>
+        <File>Windows\\system32\\samu_krnl_isv_ci.sbin</File>
+        <File>Windows\\system32\\SlotMaximizerAg.dll</File>
+        <File>Windows\\system32\\SlotMaximizerBe.dll</File>
+      </FILES>
+      <DIRECTORIES>
+      </DIRECTORIES>
+      <SERVICES>
+        <SERVICEDELETE>AMD External Events Utility</SERVICEDELETE>
+        <SERVICEDELETE>ATI External Events Utility</SERVICEDELETE>
+        <SERVICEDELETE>AMD FUEL Service</SERVICEDELETE>
+        <SERVICEDELETE>amdkmdag</SERVICEDELETE>
+        <SERVICEDELETE>amdkmdap</SERVICEDELETE>
+        <SERVICEDELETE>atikmafd</SERVICEDELETE>
+        <SERVICEDELETE>AtiHDAudioService</SERVICEDELETE>
+        <SERVICEDELETE>AODService</SERVICEDELETE>
+        <SERVICEDELETE>atierecord</SERVICEDELETE>
+      </SERVICES>
+    </Drivers>
+    <Drivers Key="HDMIAUDIO" id="{4d36e96c-e325-11ce-bfc1-08002be10318};AtiHDAudioService" productver="8.0.0.8807" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AtiHDAudioService\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AtiHDAudioService</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AtiHDAudioService\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AtiHDAudioService</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AtiHDAudioService\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AtiHDAudioService</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Windows\\System32\\drivers\\atihdw76.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw86.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw73.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw83.sys</FILE>
+      </FILES>
+      <DIRECTORIES>
+        <!--DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\atihdw73*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW83*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW76*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW86*</DIRECTORY-->
+      </DIRECTORIES>
+    </Drivers>
+    <Drivers Key="HDMIAUDIO64" id="{4d36e96c-e325-11ce-bfc1-08002be10318};AtiHDAudioService" productver="8.0.0.8807" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AtiHDAudioService\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AtiHDAudioService</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AtiHDAudioService\\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AtiHDAudioService</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AtiHDAudioService\Enum</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AtiHDAudioService</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Windows\\System32\\drivers\\atihdw76.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw86.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw73.sys</FILE>
+        <FILE>Windows\\System32\\drivers\\atihdw83.sys</FILE>
+      </FILES>
+      <DIRECTORIES>
+        <!--DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\atihdw73*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW83*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW76*</DIRECTORY>
+        <DIRECTORY>Windows\\System32\\DriverStore\\FileRepository\\AtihdW86*</DIRECTORY-->
+      </DIRECTORIES>
+    </Drivers> 
+  </AMDDrivers>
+  <AMDApplications>
+   <Applications Key="CCC" id="{E37C3897-91A7-41A2-A7B8-D776B9869AAA}" productver="2012.0805.1935.33342" size="150">
+      <FILES>
+        <FILE>ProgramData\\ATI\\ACE\\Profiles.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\AMD\\Fuel\\ClientProxyLog.txt</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Manifest.Bin</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Manifest.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\NamedProfilesIndex.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles\\Air Traveler.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles\\Battery Saver.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles\\Gaming.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles\\Movie.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\Profiles\\Web Browsing.xml</FILE>
+        <FILE>%LOCALAPPDATA%\\AMD\\Fuel\\ClientProxyLog.txt</FILE>
+        <FILE>%LOCALAPPDATA%\\ATI\\ACE\\APL\\User.bib</FILE>
+      </FILES>
+      <REGISTRY>                
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-install</RVAL>        
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\ACE\\AppDomains</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\AMD\\MFTVDecoder</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\ACE\\Dismissables</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\ACE\\Processes</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\ACE\\Services</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\HydraGrd</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI\\HydraVision2k</RVAL>
+        <RVAL>HKEY_USERS\\S-1-5-21-***\\Software\\ATI</RVAL>        
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_CURRENT_USER\\Software\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_CURRENT_USER\\SOFTWARE\\Wow6432Node\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+        <RVAL>HKEY_CURRENT_USER\\Software\\ATI</RVAL>
+      </REGISTRY>
+      <PROCESSES>
+        <PROCESSSTOP>MOM.InstallProxy.exe</PROCESSSTOP>
+      </PROCESSES>
+       <DIRECTORIES>        
+        <DIRECTORY>ProgramData\\AMD</DIRECTORY>
+        <DIRECTORY>ProgramData\\ATI\\ACE</DIRECTORY>
+        <DIRECTORY>ProgramData\\ATI</DIRECTORY>
+        <DIRECTORY>%LOCALAPPDATA%\\ATI\\ACE</DIRECTORY>
+        <DIRECTORY>%APPDATA%\\ATI\\ACE</DIRECTORY>
+        <DIRECTORY>%APPDATA%\\ATI</DIRECTORY>
+        <DIRECTORY>%APPDATA%\\AMD</DIRECTORY>
+        <DIRECTORY>%LOCALAPPDATA%\\ATI</DIRECTORY>
+        <DIRECTORY>%LOCALAPPDATA%\\AMD</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+   </Applications>
+   <Applications Key="AVT" id="{23FA86F6-5787-456B-843A-96C2D6748FF1}" productver="2.00.0003" size="3">
+     <DIRECTORIES>
+       <DIRECTORY>ProgramData\\AMD</DIRECTORY>
+     </DIRECTORIES>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\atimpenc.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\atimpenc64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\UninstReg.reg</FILE>
+     </FILES>
+   </Applications>
+   <Applications Key="AVT64" id="{0692A976-2324-4143-8831-04A5BD7B9E1D}" productver="2.00.0003" size="3">
+     <DIRECTORIES>
+       <DIRECTORY>ProgramData\\AMD</DIRECTORY>
+     </DIRECTORIES>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\atimpenc.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\atimpenc64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\UninstReg.reg</FILE>
+     </FILES>
+   </Applications>
+   <Applications Key="HydraVision" id="{C3079CF5-FA41-4367-A90C-B09FF8B9728F}" productver="4.2.248.0" size="6">
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\HydraVision</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\HydraVision</DIRECTORY>
+     </DIRECTORIES>
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\HydraVision</RVAL>       
+     </REGISTRY>
+   </Applications>
+   <Applications Key="PRW" id="{3C909021-C40E-489B-9C1F-6C046683FCD7}" productver="8.0.904.0" size="6">
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\PWR</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\HydraVision</DIRECTORY>
+     </DIRECTORIES>
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\AMD Problem Report Wizard</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ATI Problem Report Wizard</RVAL>
+     </REGISTRY>
+   </Applications>
+   <Applications Key="PRW64" id="{E5846BD2-7506-474F-9F0B-2AF75DBA6268}" productver="8.0.904.0" size="6">
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\PWR</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\HydraVision</DIRECTORY>
+     </DIRECTORIES>
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\AMD Problem Report Wizard</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ATI Problem Report Wizard</RVAL>
+     </REGISTRY>
+   </Applications>
+    <Applications Key="OpenCL64" id="{0C619444-A7C3-4716-96B9-0AEA52193C81}" productver="10.0.1022.1" size="90">
+     <FILES>
+       <FILE>Windows\\System32\\OpenCL.dll</FILE>
+       <FILE>Windows\\System32\\OVDecode64.dll</FILE>
+       <FILE>Windows\\System32\\OpenVideo64.dll</FILE>
+       <FILE>Windows\\System32\\amdocl64.dll</FILE>
+	   <FILE>Windows\\System32\\amdocl_as64.exe</FILE>
+	   <FILE>Windows\\System32\\amdocl_ld64.exe</FILE>
+	   <FILE>Windows\\System32\\clinfo.exe</FILE>
+       <FILE>Windows\\SysWOW64\\OpenCL.dll</FILE>
+       <FILE>Windows\\SysWOW64\\OpenVideo.dll</FILE>
+       <FILE>Windows\\SysWOW64\\OVDecode.dll</FILE>
+       <FILE>Windows\\SysWOW64\\amdocl.dll</FILE>
+       <FILE>Windows\\SysWOW64\\amdave32.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atisamu32.dll</FILE>
+       <FILE>Windows\\atiogl.xml</FILE>
+       <FILE>Windows\\system32\\amdave64.dll</FILE>
+       <FILE>Windows\\system32\\atisamu64.dll</FILE>
+       <FILE>Windows\\system32\\atig6pxx.dll</FILE>
+       <FILE>Windows\\system32\\atig6txx.dll</FILE>
+       <FILE>Windows\\system32\\atio6axx.dll</FILE>
+       <FILE>Windows\\system32\\atiadlxx.dll</FILE>
+       <FILE>Windows\\system32\\atiapfxx.exe</FILE>
+       <FILE>Windows\\system32\\atibtmon.exe</FILE>
+       <FILE>Windows\\system32\\aticalcl64.dll</FILE>
+       <FILE>Windows\\system32\\aticaldd64.dll</FILE>
+       <FILE>Windows\\system32\\aticalrt64.dll</FILE>
+       <FILE>Windows\\system32\\atidemgy.dll</FILE>
+       <FILE>Windows\\system32\\atimuixx.dll</FILE>
+       <FILE>Windows\\system32\\atieclxx.exe</FILE>
+       <FILE>Windows\\system32\\atiesrxx.exe</FILE>
+       <FILE>Windows\\system32\\atiicdxx.dat</FILE>
+       <FILE>Windows\\system32\\atipblag.dat</FILE>
+       <FILE>Windows\\system32\\atitmm64.dll</FILE>
+       <FILE>Windows\\system32\\ATIODCLI.exe</FILE>
+       <FILE>Windows\\system32\\ATIODE.exe</FILE>
+       <FILE>Windows\\system32\\ativvaxy_cik.dat</FILE>
+       <FILE>Windows\\system32\\ativvaxy_cik_nd.dat</FILE>
+       <FILE>Windows\\system32\\atiedu64.dll</FILE>
+       <FILE>Windows\\SysWOW64\\ati2edxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticalcl.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticaldd.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticalrt.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atigktxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atiglpxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atioglxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atipblag.dat</FILE>
+       <FILE>Windows\\SysWOW64\\atiadlxy.dll</FILE>
+       <FILE>Windows\\SysWOW64\\ativvsva.dat</FILE>
+       <FILE>Windows\\SysWOW64\\ativvsvl.dat</FILE>
+       <FILE>Windows\\system32\\ativvsva.dat</FILE>
+       <FILE>Windows\\system32\\ativvsvl.dat</FILE>
+       <FILE>Windows\\system32\\drivers\\ati2erec.dll</FILE>
+       <FILE>Windows\\prefetch\\ATIECLXX.EXE-48B31DFA.pf</FILE>
+       <FILE>Windows\\system32\\atidemgx.dll</FILE>       
+       <FILE>Windows\\system32\\atiglpxx.dll</FILE>
+       <FILE>Windows\\system32\\ati2edxx.dll</FILE>
+       <FILE>Windows\\system32\\aticalcl.dll</FILE>
+       <FILE>Windows\\system32\\aticaldd.dll</FILE>
+       <FILE>Windows\\system32\\aticalrt.dll</FILE>
+       <FILE>Windows\\system32\\atigktxx.dll</FILE>
+       <FILE>Windows\\system32\\atioglxx.dll</FILE>
+       <FILE>Windows\\system32\\atitmmxx.dll</FILE>            
+     </FILES>
+     <REGISTRY>
+       <RVAL>HKEY_CLASSES_ROOT\\AtiComCloneControl.CloneViewHelper</RVAL>
+       <RVAL>HKEY_CLASSES_ROOT\\AtiComCloneControl.CloneViewHelper.1</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\Software\\Classes\\AtiComCloneControl.CloneViewHelper</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\Software\\Classes\\AtiComCloneControl.CloneViewHelper.1</RVAL>
+     </REGISTRY>
+   </Applications>
+   <Applications Key="OpenCL" id="{6C42B30D-8FC7-40A0-B064-DFC33CB1DFB2}" productver="10.0.1022.1" size="90">
+     <FILES>
+       <FILE>Windows\\System32\\OpenCL.dll</FILE>
+       <FILE>Windows\\System32\\OVDecode64.dll</FILE>
+	   <FILE>Windows\\System32\\OVDecode.dll</FILE>
+       <FILE>Windows\\System32\\OpenVideo64.dll</FILE>
+       <FILE>Windows\\System32\\amdocl64.dll</FILE>
+	   <FILE>Windows\\System32\\amdocl_as32.exe</FILE>
+	   <FILE>Windows\\System32\\amdocl_ld32.exe</FILE>
+	   <FILE>Windows\\System32\\clinfo.exe</FILE>
+       <FILE>Windows\\SysWOW64\\amdave32.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atisamu32.dll</FILE>
+       <FILE>Windows\\atiogl.xml</FILE>
+       <FILE>Windows\\system32\\amdave64.dll</FILE>
+       <FILE>Windows\\system32\\atisamu64.dll</FILE>       
+       <FILE>Windows\\system32\\atig6pxx.dll</FILE>
+       <FILE>Windows\\system32\\atig6txx.dll</FILE>
+       <FILE>Windows\\system32\\atio6axx.dll</FILE>
+       <FILE>Windows\\system32\\atiadlxx.dll</FILE>
+       <FILE>Windows\\system32\\atiapfxx.exe</FILE>
+       <FILE>Windows\\system32\\atibtmon.exe</FILE>
+       <FILE>Windows\\system32\\aticalcl64.dll</FILE>
+       <FILE>Windows\\system32\\aticaldd64.dll</FILE>
+       <FILE>Windows\\system32\\aticalrt64.dll</FILE>
+       <FILE>Windows\\system32\\atidemgy.dll</FILE>
+       <FILE>Windows\\system32\\atimuixx.dll</FILE>
+       <FILE>Windows\\system32\\atieclxx.exe</FILE>
+       <FILE>Windows\\system32\\atiesrxx.exe</FILE>
+       <FILE>Windows\\system32\\atiicdxx.dat</FILE>
+       <FILE>Windows\\system32\\atipblag.dat</FILE>
+       <FILE>Windows\\system32\\atitmm64.dll</FILE>
+       <FILE>Windows\\system32\\ATIODCLI.exe</FILE>
+       <FILE>Windows\\system32\\ATIODE.exe</FILE>
+       <FILE>Windows\\system32\\ativvaxy_cik.dat</FILE>
+       <FILE>Windows\\system32\\ativvaxy_cik_nd.dat</FILE>
+       <FILE>Windows\\system32\\atiedu64.dll</FILE>
+       <FILE>Windows\\SysWOW64\\ati2edxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticalcl.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticaldd.dll</FILE>
+       <FILE>Windows\\SysWOW64\\aticalrt.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atigktxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atiglpxx.dll</FILE>
+       <FILE>Windows\\system32\\ati2edxx.dll</FILE>
+       <FILE>Windows\\system32\\aticalcl.dll</FILE>
+       <FILE>Windows\\system32\\aticaldd.dll</FILE>
+       <FILE>Windows\\system32\\aticalrt.dll</FILE>
+       <FILE>Windows\\system32\\atigktxx.dll</FILE>
+       <FILE>Windows\\system32\\atioglxx.dll</FILE>
+       <FILE>Windows\\system32\\atitmmxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atioglxx.dll</FILE>
+       <FILE>Windows\\SysWOW64\\atipblag.dat</FILE>
+       <FILE>Windows\\SysWOW64\\atiadlxy.dll</FILE>
+       <FILE>Windows\\SysWOW64\\ativvsva.dat</FILE>
+       <FILE>Windows\\SysWOW64\\ativvsvl.dat</FILE>
+       <FILE>Windows\\system32\\ativvsva.dat</FILE>
+       <FILE>Windows\\system32\\ativvsvl.dat</FILE>
+       <FILE>Windows\\system32\\drivers\\ati2erec.dll</FILE>
+       <FILE>Windows\\prefetch\\ATIECLXX.EXE-48B31DFA.pf</FILE>
+       <FILE>Windows\\system32\\atidemgx.dll</FILE>       
+       <FILE>Windows\\system32\\atiglpxx.dll</FILE>
+       <FILE>Windows\\prefetch\\CCC.EXE-B637C9BF.pf</FILE>
+     </FILES>
+     <REGISTRY>
+       <RVAL>HKEY_CLASSES_ROOT\\AtiComCloneControl.CloneViewHelper</RVAL>
+       <RVAL>HKEY_CLASSES_ROOT\\AtiComCloneControl.CloneViewHelper.1</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\Software\\Classes\\AtiComCloneControl.CloneViewHelper</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\Software\\Classes\\AtiComCloneControl.CloneViewHelper.1</RVAL>
+     </REGISTRY>
+   </Applications> 
+   <Applications Key="WirelessDisplay" id="{F4013EF1-E7DF-48DA-8A57-5AF3ACE928B4}" productver="1.0.0.2" size="1">
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies\\Multimedia</DIRECTORY>
+     </DIRECTORIES>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\amdwdst.exe</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\amdwdst.config</FILE>
+     </FILES>
+   </Applications>
+   <Applications Key="WirelessDisplay64" id="{182AFF24-BFB6-4256-8A5D-8D3D728885D1}" productver="1.0.0.2" size="1">
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies\\Multimedia</DIRECTORY>
+     </DIRECTORIES>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\amdwdst.exe</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\amdwdst.config</FILE>
+     </FILES>
+   </Applications>    
+   <Applications Key="CIM" id="{AAE88A33-9A83-4A5E-B6D4-CC757954B06E}" productver="8.0.896.0" size="20">
+     <REGISTRY>       
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD\\EEU</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE\\Settings</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE</RVAL>      
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD\\EEU</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE\\Settings</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI</RVAL>      
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>       
+       <DIRECTORY>Program Files\\ATI</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="CIM64" id="{AAE88A33-9A83-4A5E-B6D4-CC757954B06E}" productver="8.0.896.0" size="20">
+     <REGISTRY>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD\\EEU</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\AMD</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE\\Settings</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_USERS\\S-1-5-18\\Software\\ATI</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD\\EEU</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\AMD</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI\\ACE\\Settings</RVAL>
+       <RVAL>HKEY_USERS\\.DEFAULT\\Software\\ATI</RVAL>      
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>       
+       <DIRECTORY>Program Files\\ATI</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="DnDTranscoding" id="{9AADAE04-F6AC-44B3-A1E0-5E3F3F48F6CD}" productver="2.00.0000" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+     </REGISTRY>
+   </Applications>
+   <Applications Key="DnDTranscoding64" id="{9AADAE04-F6AC-44B3-A1E0-5E3F3F48F6CD}" productver="2.00.0000" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+     </REGISTRY>
+   </Applications>
+   <Applications Key="SteadyVideo" id="{2C0A58AD-D91E-4A4D-8265-CC39E80BEDDB}" productver="2.06.0000" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\SteadyVideo64</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\AMD\\SteadyVideo</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\AMD\\SteadyVideo</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="SteadyVideo64" id="{BAEBEA79-1FF2-43AC-82FB-7FB2489211A4}" productver="2.06.0000" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\SteadyVideo64</RVAL>       
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\AMD\\SteadyVideo</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\AMD\\SteadyVideo</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="Branding" id="{2C413608-8B6D-468E-A7D5-3085663270B8}" productver="1.00.0000" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Branding</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Branding</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="ccc-core-static" id="{E37C3897-91A7-41A2-A7B8-D776B9869AAA}" productver="2012.0930.1953.33868" size="13">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-05-core-static</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-install</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="ccc-graphics-previews-common" id="{71EABE87-82DD-4095-B1EC-8435588BACF3}" productver="2012.0930.1953.33868" size="2">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-30-graphics-previews-common</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Graphics-Previews-Common</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Graphics-Previews-Common</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-all" id="{3BF5FCEC-6270-4CA8-B318-AA311CB1B7EF}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-All</RVAL>
+      </REGISTRY>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-mom-installproxy" id="{00181724-5CB1-480C-8A26-109A3BAF6437}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>        
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE\\Settings</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>        
+      </REGISTRY>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\MOM-InstallProxy</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\MOM-InstallProxy</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="PowerXpressHybrid" id="{3915C498-7B9D-41BF-A303-62E0AF0444F9}" productver="1.00.0000" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-PowerXpressHybrid</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+      </REGISTRY>
+      <DIRECTORIES>        
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\PowerXpressHybrid</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\PowerXpressHybrid</DIRECTORY>        
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-profiles-desktop" id="{6F4A73DC-F14E-40F5-AAD4-D8B55F9E8F82}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\CCC-Profiles-Desktop</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+      </REGISTRY>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Profiles\\Desktop</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Profiles</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Profiles\\Desktop</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Profiles</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-profiles-mobile" id="{CA95D425-3E71-485D-BEE5-6A6CA8B6A869}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\CCC-Profiles-Mobile</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+      </REGISTRY>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Profiles\\Mobile</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE\\Profiles</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Profiles\\Mobile</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE\\Profiles</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies\\ATI.ACE</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-utility" id="{1BA9C85D-98B2-4184-ACAA-34CFE7D004D1}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-60-utility</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Program Files\\ATI Technologies\\cccutil.txt</FILE>
+        <FILE>Program Files (x86)\\ATI Technologies\\cccutil.txt</FILE>
+      </FILES>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="ccc-utility64" id="{DCFE9A13-31AA-4934-AAAB-4DC9C009B14E}" productver="2012.0930.1953.33868" size="1">
+      <REGISTRY>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-60-utility64</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI\\ACE</RVAL>
+        <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI</RVAL>
+      </REGISTRY>
+      <FILES>
+        <FILE>Program Files\\ATI Technologies\\cccutil.txt</FILE>
+        <FILE>Program Files (x86)\\ATI Technologies\\cccutil64.txt</FILE>
+      </FILES>
+      <DIRECTORIES>
+        <DIRECTORY>Program Files\\ATI Technologies\\</DIRECTORY>
+        <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+      </DIRECTORIES>
+    </Applications>
+    <Applications Key="Fuel" id="{8895A9EF-3A99-4E3B-8AA0-E58AB9217F72}" productver="2012.0805.1935.33342" size="3">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\Fuel</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>ProgramData\\AMD</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\ATI\\ACE</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\ATI</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\AMD</DIRECTORY>
+       <DIRECTORY>%LOCALAPPDATA%\\AMD</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="Fuel64" id="{53834429-1C61-40DC-93F9-645D0D84E746}" productver="2012.0805.1935.33342" size="3">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\AMD FUEL Service</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\Fuel</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet002\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+     </REGISTRY>
+     <DIRECTORIES>
+       <DIRECTORY>ProgramData\\AMD</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\ATI\\ACE</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\ATI</DIRECTORY>
+       <DIRECTORY>%APPDATA%\\AMD</DIRECTORY>
+       <DIRECTORY>%LOCALAPPDATA%\\AMD</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="WMVDecoder" id="{09175E7F-7F0D-45F6-AC71-9AD66D8C02BD}" productver="1.0.70805.2017" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\MFTDecoder</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\Wow6432Node\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\Wow6432Node\\AMD</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\AMD</RVAL>
+     </REGISTRY>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_32.dll</FILE>
+     </FILES>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies\\Multimedia</DIRECTORY>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="WMVDecoder64" id="{09175E7F-7F0D-45F6-AC71-9AD66D8C02BD}" productver="1.0.70805.2017" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD\\MFTDecoder</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\Wow6432Node\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\Wow6432Node\\AMD</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\AMD\\MFTVDecoder</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\AMD</RVAL>
+     </REGISTRY>
+     <FILES>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_64.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDMFTDecoder_32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDh264Enc32.dll</FILE>
+       <FILE>Program Files\\Common Files\\ATI Technologies\\Multimedia\\AMDhwDecoder_32.dll</FILE>
+     </FILES>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies\\Multimedia</DIRECTORY>
+       <DIRECTORY>Program Files\\Common Files\\ATI Technologies</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>  
+   <Applications Key="Utility" id="{1BA9C85D-98B2-4184-ACAA-34CFE7D004D1}" productver="2012.0805.1935.33342" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-60-utility</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\System Wide Settings</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\Install\\ccc-install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\Install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Wow6432Node\\ATI Technologies\\Install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Wow6432Node\\ATI Technologies</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\ATI</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\AMD</RVAL>
+     </REGISTRY>
+     <FILES>
+       <FILE>Program Files\\ATI Technologies\\cccutil.txt</FILE>
+     </FILES>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>AMD</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+   <Applications Key="Utility64" id="{DCFE9A13-31AA-4934-AAAB-4DC9C009B14E}" productver="2012.0805.1935.33342" size="1">
+     <REGISTRY>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\eventlog\\Application\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\ATIeRecord</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-60-utility</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies\\Install\\ccc-install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\System Wide Settings</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\Install\\ccc-install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies\\Install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\ATI Technologies</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Wow6432Node\\ATI Technologies\\Install</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Wow6432Node\\ATI Technologies</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\AMD</RVAL>
+       <RVAL>HKEY_LOCAL_MACHINE\\SOFTWARE\\ATI Technologies</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\ATI</RVAL>
+       <RVAL>HKEY_CURRENT_USER\\Software\\AMD</RVAL>
+     </REGISTRY>
+     <FILES>
+       <FILE>Program Files\\ATI Technologies\\cccutil.txt</FILE>
+     </FILES>
+     <DIRECTORIES>
+       <DIRECTORY>Program Files\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>Program Files\\ATI</DIRECTORY>
+       <DIRECTORY>Program Files (x86)\\ATI Technologies</DIRECTORY>
+       <DIRECTORY>AMD</DIRECTORY>
+     </DIRECTORIES>
+   </Applications>
+  </AMDApplications>   
+</ROOT>

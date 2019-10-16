@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created With CreateMup.exe Version 06.05.2013.1414-->
+<MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
+  <packageinformation>
+    <installertype>installshield installscript</installertype>
+    <packagegrouping>single_package</packagegrouping>
+    <packagingtype>zip</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <mupspecificationversion>2.4.1</mupspecificationversion>
+    <version>10.18.10.3345</version>
+    <name>Graphics </name>
+    <supportedoperatingsystems>
+      <osidentifier name="Windows7" architecture="x64" />
+      <osidentifier name="Windows8" architecture="x64" />
+      <osidentifier name="Windows8.1" architecture="x64" />
+      <osidentifier name="Vista" architecture="x64" />
+      <osidentifier name="W2K8" architecture="x64" />
+    </supportedoperatingsystems>
+  </packageinformation>
+  <executable>
+    <executablename>setup.exe</executablename>
+  </executable>
+  <behaviors>
+    <!--Not Supported By the Installer.... Conditional
+    <behavior name="freshinstall">
+    <vendoroption>
+        <optionvalue switch="/" requiresvalue="false"/>
+      </vendoroption>
+    </behavior>
+    -->
+    <!--Driver Only Package, Installer Doesn't need to support
+    <behavior name="driveronly">
+      <vendoroption>
+         <optionvalue switch="/" requiresvalue="false"></optionvalue>
+      </vendoroption>
+    </behavior>
+      <behavior name="applicationonly">
+      <vendoroption>
+         <optionvalue switch="/" requiresvalue="false"></optionvalue>
+      </vendoroption>
+    </behavior>
+    -->
+    <behavior name="extractdrivers">
+      <vendoroption>
+        <container>
+          <containervalue switch="/" requiresvalue="false" valuedelimiter=" " enclose="&quot;">v</containervalue>
+          <optionvalue switch="" requiresvalue="true" valuedelimiter="=" enclose="\&quot;">ExtractDrivers</optionvalue>
+        </container>
+      </vendoroption>
+    </behavior>
+    <behavior name="attended" />
+    <behavior name="help">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">?</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">s</optionvalue>
+      </vendoroption>
+      <!-- The DUP will Restart the system
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">b</optionvalue>
+      </vendoroption>
+      -->
+    </behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="force">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">overwrite</optionvalue>
+      </vendoroption>
+    </parametermapping>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">report</optionvalue>
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="REBOOTING_SYSTEM">
+      <vendorreturncode>15</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="PASSWORD_REQUIRED">
+      <vendorreturncode>2</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="NO_DOWNGRADE">
+      <!--Always able to DownGrade, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_UPDATE_PENDING">
+      <!--Installer only Reboots Once, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_SOFT_ERROR">
+      <vendorreturncode>7</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_HARD_ERROR">
+      <vendorreturncode>5</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>10</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>14</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
+      <vendorreturncode>3</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>9</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>6</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>4</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+  <inventorymetadata>
+    <extractdriversidentifier>
+      <softwareidentityinstances>
+        <!--filename: \Setup.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Graphics Installer</elementname>
+          <versionstring>1.5.42.0</versionstring>
+        </softwareidentity>
+        <!--filename: \x64\Drv64.exe-->
+        <softwareidentity>
+          <elementname>64 bit driver installer</elementname>
+          <versionstring>1.4.1.0</versionstring>
+        </softwareidentity>
+        <!--filename: \ICCS\SetupICCS.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Installation Framework</elementname>
+          <versionstring>1.4.3.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\CustomModeApp.exe-->
+        <softwareidentity>
+          <elementname>CustomModeApp</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\difx64.exe-->
+        <softwareidentity>
+          <elementname>64 bit driver installer</elementname>
+          <versionstring>1.4.1.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\DPTopologyApp.exe-->
+        <softwareidentity>
+          <elementname>DPTopologyApp</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\GfxUIEx.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Graphics</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\GfxUIHotKeyMenu.exe-->
+        <softwareidentity>
+          <elementname>GfxUIHotKeyMenu</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\hkcmd.exe-->
+        <softwareidentity>
+          <elementname>hkcmd Module</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxext.exe-->
+        <softwareidentity>
+          <elementname>igfxext Module</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxpers.exe-->
+        <softwareidentity>
+          <elementname>persistence Module</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxsrvc.exe-->
+        <softwareidentity>
+          <elementname>igfxsrvc Module</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxstarter.exe-->
+        <softwareidentity>
+          <elementname>igfxstarter Module</elementname>
+          <versionstring>6.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igfxtray.exe-->
+        <softwareidentity>
+          <elementname>igfxTray Module</elementname>
+          <versionstring>8.15.10.3345</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\igxpun.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Graphics Installer</elementname>
+          <versionstring>1.5.42.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\IntelCpHeciSvc.exe-->
+        <softwareidentity>
+          <elementname>
+          </elementname>
+          <versionstring>
+          </versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\IntelWiDiUMS64.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) User Mode Service</elementname>
+          <versionstring>4.5.34.0</versionstring>
+        </softwareidentity>
+        <!--filename: \Graphics\IntelWiDiVAD64.exe-->
+        <softwareidentity>
+          <elementname>Intel® WiDi</elementname>
+          <versionstring>4.5.34.0</versionstring>
+        </softwareidentity>
+      </softwareidentityinstances>
+      <pnpids>
+        <pnpdevice>
+          <!--filename: \Graphics\igdlh64.inf-->
+          <driverversion>10.18.10.3345</driverversion>
+          <pciinfo vendorID="8086" deviceID="0162" />
+          <pciinfo vendorID="8086" deviceID="0166" />
+          <pciinfo vendorID="8086" deviceID="0152" />
+          <pciinfo vendorID="8086" deviceID="0156" />
+          <pciinfo vendorID="8086" deviceID="016A" />
+          <pciinfo vendorID="8086" deviceID="015A" />
+          <pciinfo vendorID="8086" deviceID="0F31" />
+          <pciinfo vendorID="8086" deviceID="0402" />
+          <pciinfo vendorID="8086" deviceID="0406" />
+          <pciinfo vendorID="8086" deviceID="0412" />
+          <pciinfo vendorID="8086" deviceID="0416" />
+          <pciinfo vendorID="8086" deviceID="041E" />
+          <pciinfo vendorID="8086" deviceID="0A06" />
+          <pciinfo vendorID="8086" deviceID="0A16" />
+          <pciinfo vendorID="8086" deviceID="0A26" />
+          <pciinfo vendorID="8086" deviceID="0A2E" />
+          <pciinfo vendorID="8086" deviceID="0A1E" />
+          <pciinfo vendorID="8086" deviceID="0A0E" />
+          <pciinfo vendorID="8086" deviceID="0D26" />
+          <pciinfo vendorID="8086" deviceID="0D22" />
+          <pciinfo vendorID="8086" deviceID="041A" />
+          <pciinfo vendorID="8086" deviceID="040A" />
+        </pnpdevice>
+        <pnpdevice>
+          <!--filename: \DisplayAudio\IntcDAud.inf-->
+          <driverversion>6.16.00.3129</driverversion>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2805</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2805</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2806</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2806</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2807</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2807</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2882</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>2882</PnPProductID>
+          </pnpidstring>
+        </pnpdevice>
+      </pnpids>
+    </extractdriversidentifier>
+    <fullpackageidentifier>
+      <msis>
+        <msi>
+          <identifyingnumber>{4D36E968-E325-11CE-BFC1-08002BE10318}</identifyingnumber>
+          <version>10.18.10.3345</version>
+          <upgradecode>{4D36E968-E325-11CE-BFC1-08002BE10318}</upgradecode>
+        </msi>
+      </msis>
+    </fullpackageidentifier>
+  </inventorymetadata>
+</MUPDefinition>

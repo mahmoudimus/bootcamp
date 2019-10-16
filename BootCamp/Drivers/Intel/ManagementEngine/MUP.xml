@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created With CreateMup.exe Version 11.07.2013.1538-->
+<MUPDefinition xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd mupdefinition.xsd">
+  <packageinformation>
+    <installertype>msi</installertype>
+    <packagegrouping>single_package</packagegrouping>
+    <packagingtype>zip</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <mupspecificationversion>2.4.2</mupspecificationversion>
+    <version>10.0.30.1072</version>
+    <name>Intel(R) Management Engine Firmware</name>
+    <supportedoperatingsystems>
+      <osidentifier name="XP" architecture="x64" />
+      <osidentifier name="XP" architecture="x86" />
+      <osidentifier name="W2K3" architecture="x64" />
+      <osidentifier name="W2K3" architecture="x86" />
+      <osidentifier name="Vista" architecture="x64" />
+      <osidentifier name="Vista" architecture="x86" />
+      <osidentifier name="W2K8" architecture="x64" />
+      <osidentifier name="W2K8" architecture="x86" />
+      <osidentifier name="Windows7" architecture="x64" />
+      <osidentifier name="Windows7" architecture="x86" />
+      <osidentifier name="W2K8R2" architecture="x64" />
+      <osidentifier name="Windows8" architecture="x64" />
+      <osidentifier name="Windows8" architecture="x86" />
+      <osidentifier name="W2K12" architecture="x64" />
+      <osidentifier name="Windows8.1" architecture="x64" />
+      <osidentifier name="Windows8.1" architecture="x86" />
+      <osidentifier name="W2K12R2" architecture="x64" />
+    </supportedoperatingsystems>
+  </packageinformation>
+  <executable>
+    <executablename>SetupME.exe</executablename>
+  </executable>
+  <behaviors>
+    <!--
+    <behavior name="freshinstall">
+      Not Supported By the Installer.... Conditional
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false" />
+      </vendoroption>
+    </behavior>
+-->
+    <behavior name="driveronly">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">s</optionvalue>
+      </vendoroption>
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">drvonly</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="applicationonly">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">nodrv</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="extractdrivers">
+      <vendoroption>
+        <container>
+          <containervalue switch="/" requiresvalue="false" valuedelimiter=" " enclose="&quot;">v</containervalue>
+          <optionvalue switch="" requiresvalue="true" valuedelimiter="=" enclose="\&quot;">ExtractDrivers</optionvalue>
+        </container>
+      </vendoroption>
+    </behavior>
+    <behavior name="attended" />
+    <behavior name="help">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">?</optionvalue>
+      </vendoroption>
+    </behavior>
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">s</optionvalue>
+      </vendoroption>
+      <!-- The DUP will Restart the system
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">b</optionvalue>
+      </vendoroption>
+-->
+    </behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="force">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false">overwrite</optionvalue>
+      </vendoroption>
+    </parametermapping>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="true" valuedelimiter=" " enclose="&quot;">report</optionvalue>
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="REBOOTING_SYSTEM">
+      <vendorreturncode>1641</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="PASSWORD_REQUIRED">
+      <!-- Not valid -->
+      <vendorreturncode>2</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="NO_DOWNGRADE">
+      <!--Always able to DownGrade, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_UPDATE_PENDING">
+      <!--Installer only Reboots Once, Installer Doesn't need to support-->
+      <vendorreturncode>9999</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_SOFT_ERROR">
+      <!-- 1603=Standard Win32 fatal error code -->
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="DEP_HARD_ERROR">
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>1602</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>3010</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR_INSTALL_PLATFORM_UNSUPPORTED">
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1603</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+  <inventorymetadata>
+    <extractdriversidentifier>
+      <softwareidentityinstances>
+        <!--filename: \MEISetup\Setup.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Management Engine Components installer</elementname>
+          <versionstring>2.0.30.0</versionstring>
+        </softwareidentity>
+        <!--filename: \FullSetup\Setup.exe-->
+        <softwareidentity>
+          <elementname>Intel(R) Management Engine Components installer</elementname>
+          <versionstring>2.0.30.0</versionstring>
+        </softwareidentity>
+      </softwareidentityinstances>
+      <pnpids>
+        <pnpdevice>
+          <!--filename: \Drivers\SOL\mesrl.inf-->
+          <driverversion>10.0.20.1258</driverversion>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>1E3D</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>1CBD</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>1C3D</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>1DBD</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>1D3D</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>8C3D</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>9C3D</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>9CBD</PnPProductID>
+          </pnpidstring>
+          <pnpidstring>
+            <ACPIID>8086</ACPIID>
+            <PnPProductID>8D3D</PnPProductID>
+          </pnpidstring>
+        </pnpdevice>
+        <pnpdevice>
+          <!--filename: \Drivers\HECI\heci.inf-->
+          <driverversion>10.0.30.1054</driverversion>
+          <pciinfo vendorID="8086" deviceID="1E3A" />
+          <pciinfo vendorID="8086" deviceID="1CBA" />
+          <pciinfo vendorID="8086" deviceID="1C3A" />
+          <pciinfo vendorID="8086" deviceID="1DBA" />
+          <pciinfo vendorID="8086" deviceID="1D3A" />
+          <pciinfo vendorID="8086" deviceID="8C3A" />
+          <pciinfo vendorID="8086" deviceID="9C3A" />
+          <pciinfo vendorID="8086" deviceID="8D3A" />
+          <pciinfo vendorID="8086" deviceID="9CBA" />
+          <pciinfo vendorID="8086" deviceID="8CBA" />
+        </pnpdevice>
+      </pnpids>
+    </extractdriversidentifier>
+    <fullpackageidentifier>
+      <msis>
+        <msi>
+          <identifyingnumber>{1CEAC85D-2590-4760-800F-8DE5E91F3700}</identifyingnumber>
+          <upgradecode>{1CEAC85D-2590-4760-800F-8DE5E91F3700}</upgradecode>
+          <version>10.0.30.1072</version>
+        </msi>
+      </msis>
+    </fullpackageidentifier>
+  </inventorymetadata>
+</MUPDefinition>

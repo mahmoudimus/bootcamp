@@ -1,0 +1,86 @@
+;
+; Copyright (c) 2011  AMD
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%AMD%
+
+DriverVer=02/12/2015, 15.20.0.0000
+
+CatalogFile=amdkmpfd.cat
+
+;[ClassInstall32]
+;AddReg=system_class_addreg
+
+;[system_class_addreg]
+;HKR,,,,%SystemClassName%
+;HKR,,Icon,,"-27"
+
+[DestinationDirs]
+Drivers_Dir = 12
+
+[SourceDisksNames.x86]
+1 = %DISK_NAME%,,,""
+
+[SourceDisksNames.amd64]
+1 = %DISK_NAME%,,,""
+
+
+[SourceDisksFiles]
+amdkmpfd.sys  = 1,,
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%AMD%=AMD_KMPFD,NTAMD64
+
+[AMD_KMPFD.NTAMD64]
+%PCI\AMDPCIE.DeviceDesc%=AMDKMPFD_Install, ACPI\PNP0A03
+%PCI\AMDPCIE.DeviceDesc%=AMDKMPFD_Install, ACPI\PNP0A08
+
+[AMDKMPFD_Install]
+Include = machine.inf				; The function driver
+Needs = PCI_DRV_ROOT			; Install section for the function driver
+
+CopyFiles=Drivers_Dir
+;Reboot
+
+[Drivers_Dir]
+amdkmpfd.sys,,,2
+
+[AMDKMPFD_Install.HW]
+AddReg = AMDKMPFD_Filter_Reg
+Include = machine.inf				; The function driver
+Needs = PCI_DRV_ROOT.HW		; Install section for the function driver
+
+[AMDKMPFD_Filter_Reg]
+HKR,,"LowerFilters", 0x00010008,"amdkmpfd"
+
+[AMDKMPFD_Install.Services]
+AddService = amdkmpfd,,AMDKMPFD_ServiceInstallSection
+Include = machine.inf				; The function driver
+Needs = PCI_DRV_ROOT.Services		; Install section for the function driver
+
+[AMDKMPFD_ServiceInstallSection]
+DisplayName    = %AMDKMPFD_svcdesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\amdkmpfd.sys
+LoadOrderGroup = PnP Filter
+
+[Strings]
+AMD = "AMD"
+PCI\AMDPCIE.DeviceDesc = "Pci Bus"
+SystemClassName = "System devices"
+AMDKMPFD_svcdesc = "AMD PCI Root Bus Lower Filter"
+DISK_NAME = "AMD PCIE Install Disk"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_NORMAL   = 1
